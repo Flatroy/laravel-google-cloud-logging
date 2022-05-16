@@ -51,3 +51,25 @@ Otherwise you can set as config
 While running on **Google Cloud Platform** environments such as **Google Compute Engine**, **Google App Engine** and **Google Kubernetes Engine**, no extra work is needed. The Project ID and Credentials and are discovered automatically. Code should be written as if already authenticated.
 
 For more information visit the [Authentication documentation for the Google Cloud Client Library for PHP](https://github.com/googleapis/google-cloud-php/blob/master/AUTHENTICATION.md)
+
+## How to use with Laravel 9
+
+You can use my repository until PR is merged to superchairon/laravel-google-cloud-logging (https://github.com/superchairon/laravel-google-cloud-logging/pull/2)
+
+Add this to your composer.json
+
+```json
+            "repositories": [
+                {
+                "type": "vcs",
+                "url": "https://github.com/Flatroy/laravel-google-cloud-logging"
+                }
+            ]
+```
+
+Require dev-master version of the package
+
+
+```json
+          "superchairon/laravel-google-cloud-logging": "dev-master"
+```
